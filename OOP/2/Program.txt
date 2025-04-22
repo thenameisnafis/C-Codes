@@ -1,0 +1,158 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OOP2
+{
+    public class P
+    {
+        public int id;
+        public P(int id)
+        {
+            this.id = id;
+            Console.WriteLine("Parent Class Created");
+        }
+        public virtual void showDetails()
+        {
+            Console.WriteLine("Parent ID:" + this.id);
+        }
+        public void showDetails2()
+        {
+            Console.WriteLine("Parent Details 2");
+        }
+    }
+    public class C : P
+    {
+        public C(int id) : base(id)
+        {
+            Console.WriteLine("Child Class Created");
+        }
+        public override void showDetails()
+        {
+            Console.WriteLine("Child ID:" + this.id);
+        }
+    }
+    public abstract class Account
+    {
+        private int accountNo;
+        private string name;
+        private string nid;
+        public Account(int accountNo, string name, string nid)
+        {
+            this.accountNo = accountNo;
+            this.name = name;
+            this.nid = nid;
+        }
+        public virtual void showDetails()
+        {
+            Console.WriteLine("Account No:" + this.accountNo);
+            Console.WriteLine("Name:" + this.name);
+            Console.WriteLine("NID:" + this.nid);
+        }
+        public abstract void Deposit(double amount);
+        public abstract void Withdraw(double amount);
+    }
+    public class DebitCard : Account
+    {
+        public double balance;
+        public double openingBalance;
+        public DebitCard(int accountNo, string name, string nid,
+            double openingBalance) : base(accountNo, name, nid)
+        {
+            this.balance = openingBalance;
+            this.openingBalance = openingBalance;
+        }
+        public override void Deposit(double amount)
+        {
+            this.balance += amount;
+        }
+        public override void Withdraw(double amount)
+        {
+            this.balance -= amount;
+        }
+        public override void showDetails()
+        {
+            base.showDetails();
+            Console.WriteLine("Balance:" + this.balance);
+            Console.WriteLine("Opening Balance:" + this.openingBalance);
+            Console.WriteLine("******************");
+        }
+    }
+    public class CreditCard : Account
+    {
+        public double creditLimit;
+        public double remBalance;
+        public CreditCard(int accountNo, string name, string nid,
+            double creditLimit) : base(accountNo, name, nid)
+        {
+            this.creditLimit = creditLimit;
+            this.remBalance = creditLimit;
+        }
+        public override void Deposit(double amount)
+        {
+            this.remBalance += amount;
+        }
+
+        public override void Withdraw(double amount)
+        {
+            this.remBalance -= amount;
+        }
+        public override void showDetails()
+        {
+            base.showDetails();
+            Console.WriteLine("Credit Limit:" + this.creditLimit);
+            Console.WriteLine("Remaining Balance:" + this.remBalance);
+            Console.WriteLine("******************");
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //try
+            //{
+            //    Console.WriteLine("Enter your age");
+
+            //    int a = Convert.ToInt32(Console.ReadLine());
+
+            //    Console.WriteLine("The age is: " + a);
+            //}
+            //catch
+            //{
+            //    Console.WriteLine("Input is not a number");
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Code ended");
+            //}
+
+
+
+
+            DebitCard d1 = new DebitCard(1, "Rahim", "123456789", 500);
+            CreditCard c1 = new CreditCard(2, "Karim", "123456788", 25000);
+
+            d1.showDetails();
+            c1.showDetails();
+
+            c1.Withdraw(10000);
+            d1.Deposit(10000);
+
+            d1.showDetails();
+            c1.showDetails();
+
+            int id = 0;
+            P p = new P(id + 1);
+            P c = new C(id + 2);
+            C c2 = new C(id + 3);
+            p.showDetails();
+            c.showDetails();
+            //c.showDetails2();
+            c2.showDetails();
+            //c2.showDetails2();
+
+        }
+    }
+}

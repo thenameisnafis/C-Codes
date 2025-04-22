@@ -1,0 +1,2 @@
+D:\Semester 7 (Spring)\C# Lab\Lab\LabTask0000\LabTask0000\obj\Debug\LabTask0000.csproj.AssemblyReference.cache
+D:\Semester 7 (Spring)\C# Lab\Lab\LabTask0000\LabTask0000\obj\Debug\LabTask0000.csproj.CoreCompileInputs.cache

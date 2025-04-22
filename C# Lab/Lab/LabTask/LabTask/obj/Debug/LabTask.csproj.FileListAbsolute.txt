@@ -1,0 +1,7 @@
+D:\Semester 7 (Spring)\C# Lab\Lab\LabTask\LabTask\bin\Debug\LabTask.exe.config
+D:\Semester 7 (Spring)\C# Lab\Lab\LabTask\LabTask\bin\Debug\LabTask.exe
+D:\Semester 7 (Spring)\C# Lab\Lab\LabTask\LabTask\bin\Debug\LabTask.pdb
+D:\Semester 7 (Spring)\C# Lab\Lab\LabTask\LabTask\obj\Debug\LabTask.csproj.AssemblyReference.cache
+D:\Semester 7 (Spring)\C# Lab\Lab\LabTask\LabTask\obj\Debug\LabTask.csproj.CoreCompileInputs.cache
+D:\Semester 7 (Spring)\C# Lab\Lab\LabTask\LabTask\obj\Debug\LabTask.exe
+D:\Semester 7 (Spring)\C# Lab\Lab\LabTask\LabTask\obj\Debug\LabTask.pdb

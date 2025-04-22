@@ -1,0 +1,7 @@
+D:\Semester 7 (Spring)\C# Lab\Firstlab1\Firstlab1\bin\Debug\Firstlab1.exe.config
+D:\Semester 7 (Spring)\C# Lab\Firstlab1\Firstlab1\bin\Debug\Firstlab1.exe
+D:\Semester 7 (Spring)\C# Lab\Firstlab1\Firstlab1\bin\Debug\Firstlab1.pdb
+D:\Semester 7 (Spring)\C# Lab\Firstlab1\Firstlab1\obj\Debug\Firstlab1.csproj.AssemblyReference.cache
+D:\Semester 7 (Spring)\C# Lab\Firstlab1\Firstlab1\obj\Debug\Firstlab1.csproj.CoreCompileInputs.cache
+D:\Semester 7 (Spring)\C# Lab\Firstlab1\Firstlab1\obj\Debug\Firstlab1.exe
+D:\Semester 7 (Spring)\C# Lab\Firstlab1\Firstlab1\obj\Debug\Firstlab1.pdb
